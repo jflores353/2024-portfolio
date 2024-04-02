@@ -5,10 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabe Flores Development</title>
+    <link rel="icon" type="image/x-icon" href="/assets/gabe_logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/app.js"></script>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul id="mobile-nav">
+                <li><a href="#" id="close-btn"><img src="/assets/close.svg" alt="Close Menu mobile dropdown button"></a>
+                </li>
+                <li><a>Projects</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+            <ul>
+                <li>Gabe Flores</li>
+                <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
+                <li class="hide-on-mobile"><a href="#contact">Contact</a></li>
+                <li id="sidebar-btn"><a href="#" id="menu-btn"><img src="/assets/menu.svg"
+                            alt="Menu mobile dropdown button"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img id="hero-img" src="/assets/headshot_temp.webp" alt="Gabe Flores Headshot">
+            <h1>What's cooking!<br> My name is <span id="name">Gabe.</span></h1>
+            <h2>A couple things I'm passionate about include cooking and web development. Both involve creativity,
+                experimentation, attention to detail, and the joy of crafting something unique and satisfying.
+            </h2>
+            <div id="social-icons">
+                <a href="https://www.linkedin.com/in/gabe-flores21/" target="_blank"><img src="/assets/linkedin.svg"
+                        alt="Go to my LinkedIn account"></a>
+                <a href="https://github.com/jflores353" target="_blank"><img src="/assets/github.svg"
+                        alt="Go to my Github account"></a>
+            </div>
+            <a href="#contact" id="contact-btn">Contact Me</a>
+        </section>
 
+        <hr class="divider">
+
+        <ul id="tools" class="d-grid w-100">
+            <li>
+                <h3>HTML & CSS</h3>
+                <span>4 Years Experience</span>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <span>4 Years Experience</span>
+            </li>
+            <li>
+                <h3>React</h3>
+                <span>3 Years Experience</span>
+            </li>
+            <li>
+                <h3>Jekyll</h3>
+                <span>2 Years Experience</span>
+            </li>
+            <li>
+                <h3>Bootstrap & Tailwind</h3>
+                <span>3 Years Experience</span>
+            </li>
+        </ul>
+
+        <hr class="divider">
+
+        <h2 class="section-header">Projects</h2>
+        <section class="d-grid gap-3">
+            <article>
+                <div class="d-grid justify-center">
+                    <a class="proj-link" href="https://preview.zollege.com" target="_blank"><img class="w-100"
+                            src="/assets/preview-zollege.webp" alt="Click on image to go to Zollege.com"></a>
+                    <h3 class="proj-name">Zollege Healthcare Career Schools - <a class="proj-link"
+                            href="https://preview.zollege.com" target="_blank">Zollege.com</a></h3>
+                    <ul class="tech-used d-flex">
+                        <li>Jekyll</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                    </ul>
+                    <p>
+                        Utilized Jekyll, a static site generator, to streamline development. Translated Figma's design
+                        into
+                        HTML, CSS, and JavaScript, ensuring seamless integration with Jekyll's templating system.
+                        Delivered
+                        a responsive website, combining design aesthetics with functional excellence, for optimal user
+                        experience across devices.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="d-grid justify-center">
+                    <a class="proj-link" href="https://conmimadre.netlify.app" target="_blank"><img class="w-100"
+                            src="/assets/cmm.png" alt="Click on image to go to Zollege.com"></a>
+                    <h3 class="proj-name">Con Mi Madre - <a class="proj-link" href="https://conmimadre.netlify.app"
+                            target="_blank">conmimadre.netlify.app/</a>
+                    </h3>
+                    <ul class="tech-used d-flex">
+                        <li>React</li>
+                        <li>Tailwind</li>
+                        <li>SanityCMS</li>
+                        <li>Netlify</li>
+                    </ul>
+                    <p>
+                        The Austin based non-profit's website was crafted aligning with its mission statement,
+                        prioritizing user
+                        engagement and accessibility. React JS facilitated dynamic content delivery, enhancing
+                        interactivity
+                        and responsiveness. Through its component-based architecture, the site dynamically showcases the
+                        organization's initiatives, fostering community engagement and support.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+    </main>
 </body>
 
 </html>
