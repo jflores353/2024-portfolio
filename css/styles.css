@@ -168,7 +168,7 @@ nav li:nth-child(1){
     height: 200px;
     object-fit: cover;
 }
-#name{
+#hero-name{
     border-bottom: 3px solid var(--clr-green);
 }
 #social-icons{
@@ -254,3 +254,48 @@ nav li:nth-child(1){
     font-size: var(--fs-500);
     font-weight: var(--fw-bold);
 }
+
+/* Contact Form */
+form {
+    min-width: 300px;
+  }
+  
+  .input-group{
+    display: grid;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.5px solid var(--clr-green);
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    font-size: var(--fs-400);
+    text-transform: uppercase;
+  }
+  
+  input,
+  textarea {
+    border: none;
+    min-width: 80%;
+    min-height: 2rem;
+  }
+  
+  textarea {
+    height: 7rem;
+    resize: vertical;
+  }
+
+  .button-row{
+    padding-bottom: 3rem;
+    text-align: right;
+  }
+  .btn{
+    min-width: 170px;
+    padding: 1rem 2rem;
+    background: none;
+    color: var(--clr-dark);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    border: none;
+    border-bottom: 3px solid var(--clr-green);
+    text-transform: uppercase;
+  }

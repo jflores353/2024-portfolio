@@ -34,7 +34,7 @@
     <main>
         <section id="hero">
             <img id="hero-img" src="/assets/headshot_temp.webp" alt="Gabe Flores Headshot">
-            <h1>What's cooking!<br> My name is <span id="name">Gabe.</span></h1>
+            <h1>What's cooking!<br> My name is <span id="hero-name">Gabe.</span></h1>
             <h2>A couple things I'm passionate about include cooking and web development. Both involve creativity,
                 experimentation, attention to detail, and the joy of crafting something unique and satisfying.
             </h2>
@@ -121,6 +121,39 @@
                     </p>
                 </div>
             </article>
+        </section>
+
+        <hr class="divider">
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, please fill out the form below.</p>
+            <form action="/thanks" method="post" data-netlify="true">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" />
+                </div>
+
+                <div class="input-group">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="user_email" />
+                </div>
+                <div class="input-group">
+                    <label for="mail">Company</label>
+                    <input type="company" id="company" name="user_company" />
+                </div>
+
+                <div class="input-group">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+
+                <hr class="divider">
+
+                <div class="button-row">
+                    <button class="btn" type="submit">Send Message</button>
+                </div>
+            </form>
         </section>
 
     </main>
