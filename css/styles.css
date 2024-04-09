@@ -38,6 +38,7 @@ h3{
 h1{
     font-size: var(--fs-900);
     align-self: center;
+    min-width: max-content;
 }
 h2{
     font-size: var(--fs-600);
@@ -105,6 +106,8 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 0;
+    padding-top: 1rem;
 }
 nav li {
     min-height: 2.5rem;
@@ -119,10 +122,19 @@ nav a:hover{
     color: var(--clr-light-gray);
     cursor: pointer;
 }
-nav li:nth-child(1){
+nav a:first-child{
+    padding-left: 0;
+}
+nav li:first-child{
     margin-right: auto;
     font-weight: var(--fw-bold);
     font-size: var(--fs-500);
+}
+#navbar{
+    top: -75px;
+    position: fixed;
+    width: 100%;
+    transition: top 0.2s;
 }
 #mobile-nav{
     display: none;
@@ -154,45 +166,81 @@ nav li:nth-child(1){
 
 /* hero */
 #hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     background-color: #fff;
-    /* height: 100vh; */
     padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(50px, 4);
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: 
+    "name name img img"
+    "body body img img"
+    "btn icons img img";
 }
 #hero-img{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
+    justify-self: center;
+    align-self: center;
     object-fit: cover;
+    grid-area: img;
 }
 #hero-name{
     border-bottom: 3px solid var(--clr-green);
+    grid-area: name;
+}
+#hero > h2 {
+    grid-area: body;
 }
 #social-icons{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+    grid-area: icons
+}
+#linked-icon{
+    margin-right: -2rem;
 }
 #contact-btn{
     color: var(--clr-dark);
-    font-size: var(--fs-500);
-    font-weight: var(--fw-normal);
+    width:auto;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
     text-decoration: none;
     border-bottom: 3px solid var(--clr-green);
+    text-transform: uppercase;
+    grid-area: btn;
 }
 @media(max-width: 576px){
+    .d-sm-none {
+        display: none;
+    }
     #mobile-nav{
-        width: 100%;
+        width: 50%;
+    }
+    #linked-icon{
+        margin-right: 0;
+    }
+    #social-icons{
+        display: flex;
     }
 }
 @media(max-width: 768px){
     main{
         padding: 0 2rem;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #fff;
+        padding-top: 5rem;
+    }
+    .d-md-none{
+        display: none;
     }
     .hide-on-mobile {
         display: none;
@@ -209,7 +257,11 @@ nav li:nth-child(1){
     #hero h2{
         font-size: var(--fs-500);
         font-weight: var(--fw-normal);
-        color: var(--clr-light-gray);
+        color: var(--clr-dark);
+    }
+    #hero-img{
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -266,31 +318,31 @@ form {
     border-bottom: 1.5px solid var(--clr-green);
     margin-bottom: 1.5rem;
   }
-
+  #last-input{
+    margin-bottom: 3rem;
+  }
   label {
     font-size: var(--fs-400);
     text-transform: uppercase;
   }
-  
   input,
   textarea {
     border: none;
     min-width: 80%;
     min-height: 2rem;
   }
-  
   textarea {
     height: 7rem;
     resize: vertical;
   }
-
   .button-row{
+    padding-top: 2rem;
     padding-bottom: 3rem;
     text-align: right;
   }
   .btn{
-    min-width: 170px;
-    padding: 1rem 2rem;
+    width: auto;
+    padding-bottom: 0.75rem;
     background: none;
     color: var(--clr-dark);
     font-size: var(--fs-400);
@@ -298,4 +350,9 @@ form {
     border: none;
     border-bottom: 3px solid var(--clr-green);
     text-transform: uppercase;
+  }
+  @media(min-width: 992px){
+    .d-lg-none{
+        display: none;
+    }
   }

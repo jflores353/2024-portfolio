@@ -14,18 +14,36 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <nav>
             <ul id="mobile-nav">
                 <li><a href="#" id="close-btn"><img src="/assets/close.svg" alt="Close Menu mobile dropdown button"></a>
                 </li>
-                <li><a>Projects</a></li>
-                <li><a>Contact</a></li>
+                <li><a class="close-menu" href="#projects">Projects</a></li>
+                <li><a class="close-menu" href="#contact">Contact</a></li>
+                <div class="d-flex gap-1">
+                    <li>
+                        <a class="close-menu" href="https://www.linkedin.com/in/gabe-flores21/" target="_blank">
+                            <img src="/assets/linkedin.svg" alt="Go to my LinkedIn account"></a>
+                    </li>
+                    <li>
+                        <a class="close-menu" href="https://github.com/jflores353" target="_blank">
+                            <img src="/assets/github.svg" alt="Go to my Github account"></a>
+                    </li>
+                </div>
             </ul>
             <ul>
-                <li>Gabe Flores</li>
+                <li><a href="/">gabeFlores</a></li>
                 <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
                 <li class="hide-on-mobile"><a href="#contact">Contact</a></li>
+                <li id="linked-icon" class="hide-on-mobile">
+                    <a class="close-menu" href="https://www.linkedin.com/in/gabe-flores21/" target="_blank">
+                        <img src="/assets/linkedin.svg" alt="Go to my LinkedIn account"></a>
+                </li>
+                <li class="hide-on-mobile">
+                    <a class="close-menu" href="https://github.com/jflores353" target="_blank">
+                        <img src="/assets/github.svg" alt="Go to my Github account"></a>
+                </li>
                 <li id="sidebar-btn"><a href="#" id="menu-btn"><img src="/assets/menu.svg"
                             alt="Menu mobile dropdown button"></a></li>
             </ul>
@@ -34,7 +52,7 @@
     <main>
         <section id="hero">
             <img id="hero-img" src="/assets/headshot_temp.webp" alt="Gabe Flores Headshot">
-            <h1>What's cooking!<br> My name is <span id="hero-name">Gabe.</span></h1>
+            <h1>My name is <span id="hero-name">Gabe.</span><br>Let's Get Cooking!</h1>
             <h2>A couple things I'm passionate about include cooking and web development. Both involve creativity,
                 experimentation, attention to detail, and the joy of crafting something unique and satisfying.
             </h2>
@@ -72,7 +90,7 @@
             </li>
         </ul>
 
-        <hr class="divider">
+        <hr id="projects" class="divider">
 
         <h2 class="section-header">Projects</h2>
         <section class="d-grid gap-3">
@@ -143,7 +161,7 @@
                     <input type="company" id="company" name="user_company" />
                 </div>
 
-                <div class="input-group">
+                <div id="last-input" class="input-group">
                     <label for="msg">Message</label>
                     <textarea id="msg" name="user_message"></textarea>
                 </div>
