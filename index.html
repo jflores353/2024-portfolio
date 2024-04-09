@@ -67,7 +67,7 @@
 
         <hr class="divider">
 
-        <ul id="tools" class="d-grid w-100">
+        <ul id="tools" class="d-flex">
             <li>
                 <h3>HTML & CSS</h3>
                 <span>4 Years Experience</span>
@@ -94,50 +94,49 @@
 
         <h2 class="section-header">Projects</h2>
         <section class="d-grid gap-3">
-            <article>
-                <div class="d-grid justify-center">
-                    <a class="proj-link" href="https://preview.zollege.com" target="_blank"><img class="w-100"
-                            src="/assets/preview-zollege.webp" alt="Click on image to go to Zollege.com"></a>
-                    <h3 class="proj-name">Zollege Healthcare Career Schools - <a class="proj-link"
-                            href="https://preview.zollege.com" target="_blank">Zollege.com</a></h3>
-                    <ul class="tech-used d-flex">
-                        <li>Jekyll</li>
-                        <li>Bootstrap</li>
-                        <li>JavaScript</li>
-                        <li>Figma</li>
-                    </ul>
-                    <p>
-                        Utilized Jekyll, a static site generator, to streamline development. Translated Figma's design
-                        into
-                        HTML, CSS, and JavaScript, ensuring seamless integration with Jekyll's templating system.
-                        Delivered
-                        a responsive website, combining design aesthetics with functional excellence, for optimal user
-                        experience across devices.
-                    </p>
-                </div>
+            <article class="project-card d-grid justify-center">
+
+                <a class="project-link" href="https://preview.zollege.com" target="_blank">
+                    <h3 class="d-none d-lg-block project-name">Zollege Healthcare Career Schools - Zollege.com</h3>
+                    <img class="w-100" src="/assets/preview-zollege.webp" alt="Click on image to go to Zollege.com">
+                </a>
+                <h3 class="d-lg-none project-name">Zollege Healthcare Career Schools - <a class="proj-link"
+                        href="https://preview.zollege.com" target="_blank">Zollege.com</a></h3>
+                <ul class="tech-used d-flex">
+                    <li>Jekyll</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>Figma</li>
+                </ul>
+                <p>
+                    Utilized Jekyll, a static site generator, to streamline development. Translated Figma's design
+                    into
+                    HTML, CSS, and JavaScript, ensuring seamless integration with Jekyll's templating system.
+                    Delivered
+                    a responsive website, combining design aesthetics with functional excellence, for optimal user
+                    experience across devices.
+                </p>
             </article>
-            <article>
-                <div class="d-grid justify-center">
-                    <a class="proj-link" href="https://conmimadre.netlify.app" target="_blank"><img class="w-100"
-                            src="/assets/cmm.png" alt="Click on image to go to Zollege.com"></a>
-                    <h3 class="proj-name">Con Mi Madre - <a class="proj-link" href="https://conmimadre.netlify.app"
-                            target="_blank">conmimadre.netlify.app/</a>
-                    </h3>
-                    <ul class="tech-used d-flex">
-                        <li>React</li>
-                        <li>Tailwind</li>
-                        <li>SanityCMS</li>
-                        <li>Netlify</li>
-                    </ul>
-                    <p>
-                        The Austin based non-profit's website was crafted aligning with its mission statement,
-                        prioritizing user
-                        engagement and accessibility. React JS facilitated dynamic content delivery, enhancing
-                        interactivity
-                        and responsiveness. Through its component-based architecture, the site dynamically showcases the
-                        organization's initiatives, fostering community engagement and support.
-                    </p>
-                </div>
+            <article class="project-card d-grid justify-center">
+                <a class="project-link" href="https://conmimadre.netlify.app" target="_blank"><img class="w-100"
+                        src="/assets/cmm.png" alt="Click on image to go to Zollege.com"></a>
+                <h3 class="project-name">Con Mi Madre - <a class="proj-link" href="https://conmimadre.netlify.app"
+                        target="_blank">conmimadre.netlify.app/</a>
+                </h3>
+                <ul class="tech-used d-flex">
+                    <li>React</li>
+                    <li>Tailwind</li>
+                    <li>SanityCMS</li>
+                    <li>Netlify</li>
+                </ul>
+                <p>
+                    The Austin based non-profit's website was crafted aligning with its mission statement,
+                    prioritizing user
+                    engagement and accessibility. React JS facilitated dynamic content delivery, enhancing
+                    interactivity
+                    and responsiveness. Through its component-based architecture, the site dynamically showcases the
+                    organization's initiatives, fostering community engagement and support.
+                </p>
             </article>
         </section>
 
@@ -146,7 +145,7 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, please fill out the form below.</p>
-            <form action="/thanks" method="post" data-netlify="true">
+            <form action="/thank-you.html" method="post" data-netlify="true">
                 <div class="input-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="user_name" />
@@ -169,7 +168,7 @@
                 <hr class="divider">
 
                 <div class="button-row">
-                    <button class="btn" type="submit">Send Message</button>
+                    <button id="submit-btn" type="submit">Send Message</button>
                 </div>
             </form>
         </section>
