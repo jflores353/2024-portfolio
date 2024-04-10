@@ -395,7 +395,7 @@ textarea {
         margin-right: 0;
     }
     #hero-img {
-        height: 90vh;
+        height: 100vh;
         width: 100%;
         position: relative;
     }
@@ -421,7 +421,7 @@ textarea {
     #hero-h2 {
         color: #fff;
         font-weight: var(--fw-normal);
-        font-size: var(--fs-600);
+        font-size: var(--fs-700);
         text-shadow: 2px 2px 4px #000000;
         position: absolute;
         width: 22rem;
