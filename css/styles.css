@@ -374,6 +374,9 @@ textarea {
 #sidebar-btn {
     display: block;
 }
+.hidden{
+    visibility: hidden;
+}
 @media(max-width: 576.98px) {
     .d-sm-none {
         display: none;

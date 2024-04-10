@@ -178,7 +178,13 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, please fill out the form below.</p>
-            <form action="/thank-you.html" method="post" data-netlify="true">
+            <form action="/thank-you.html" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                <p class="hidden">
+                    <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                </p>
+
                 <div class="input-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="user_name" />
