@@ -232,7 +232,7 @@ header{
 }
 #social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
@@ -253,7 +253,7 @@ header{
     border-bottom: 3px solid var(--clr-green);
     text-transform: uppercase;
     grid-area: btn;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
 }
 #contact-btn:hover{
