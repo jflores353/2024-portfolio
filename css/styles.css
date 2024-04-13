@@ -225,7 +225,7 @@ header{
     align-self: end;
 }
 #hero-h2 {
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
     font-weight: var(--fw-normal);
     color: var(--clr-dark);
     grid-area: body;
